@@ -4,102 +4,61 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Charie Mae R. De La Victoria - Personal CV</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
-<style>
-  img{
-    border: 5px solid rgb(105, 70, 148)
-  }
 
-   .main-header {
-    border: 3px solid rgb(111, 63, 133);
-    background-color: #f3e9ff;
-    text-align: center;
-    padding: 20px;
-    margin-bottom: 20px;
-  }
-
-    .main-header h1 {
-    color: rgb(82, 44, 118);
-    margin: 0;
-  }
-
-    .main-header p {
-    color: rgb(86, 39, 130);
-    margin-top: 8px;
-    font-size: 16px;
-  }
-
-    footer{
-    border: 3px solid rgb(111, 63, 133);
-    background-color: #f3e9ff;
-    text-align: center;
-    padding: 5px;
-    margin-top: 12px;
-  }
- 
-    footer p {
-    color: rgb(82, 44, 118);
-    margin: 0;
-  }
-
-  input,textarea{
-    border: 2px solid violet;
-    color: rgb(189, 17, 236);
-    border-radius: 5px;
-    padding: 7px;
-    width: 10%;
-    background-color: #f3e9ff;
-  }
-   
-</style>
 <body>
+
   <header class="main-header">
-    <h1>Charie Mae Dela Victoria</h1>
+    <h1>Charie Mae De La Victoria</h1>
     <p>Student • Aspiring Web Developer • Badminton Player</p>
-</header>
-
-
-    <h2>CHARIE DE LA VICTORIA</h2>
     <p style="color: blueviolet;"
       >IT Student | Web Systems and Technologies</p>
+  </header>
 
-    <img border="5" src="image/charie.jpg" alt="Profile Picture" 
-    width="400px" height="400px">
-
+<main>
+    <div class="container">
+    <section class="card">
     <h2>ABOUT ME</h2>
-      <p> A dedicated IT student with a strong interest in software development and networking.<br>
-        Motivated to apply technical skills while continuously learning and improving.<br>
-        Eager to contribute to the growth and success of an organization.<br>
+        <p> A dedicated IT student with a strong interest in software development and networking.</p>
+      <img src="image/charie.jpg" alt="Profile Picture" 
+        width="400px" height="400px">
         
       <p>Email:
         <a href="mailto:delavictoria.chariemae08@gmail.com">delavictoria.chariemae08@gmail.com</a><br>
         Github
         <a href="https://github.com/chazsaa" target="_blank">GitHub</a>
       </p>
+    </section>
 
+    <section class="card">
     <h2>SKILLS</h2>
     <ul>
-        <li>TECHNICAL SKILLS
-            <ol>
-                <li>Programming</li>
-                <li>Networking Basics</li>
-                <li>Database Management</li>
-            </ol>
+        <li>Web Development
+            <ul>
+                <li>TECHNICAL SKILLS
+                    <ul>
+                        <li>Programming</li>
+                        <li>Networking Basics</li>
+                        <li>Database Management</li>
+                    </ul>
+                </li>
+                <li>SOFT SKILLS
+                    <ul>
+                        <li>Problem-Solving</li>
+                        <li>Teamwork</li>
+                        <li>Communication</li>
+                    </ul>
+                </li>
+            </ul>
         </li>
     </ul>
-    <ul>
-        <li>SOFT SKILLS
-            <ol>
-                <li>Problem Solving</li>
-                <li>Time Management</li>
-                <li>Willingness to Learn</li>
-            </ol>
-        </li>
-    </ul>
+    </section>
 
+    <section class="card">
     <h2>Education</h2>
     <table border="1" style="width: 60%; border-collapse: collapse;">
-        <tr  style="background-color: rgba(116, 25, 124, 0.589);">
+        <tr>
             <th>Year</th>
             <th>School</th> 
             <th>Program / Level</th>
@@ -130,7 +89,9 @@
             <td>Kindergarten</td>
         </tr>
     </table>
+    </section>
 
+    <section class="card">
     <h2>Contact Me</h2>
     <form>
         <input type="text" placeholder="Name"><br><br>
@@ -138,6 +99,9 @@
         <textarea placeholder="Message"></textarea><br><br>
         <button type="submit">Send</button>
     </form>
+    </section>
+</div>
+</main>
 
     <footer>
         <p>&copy; 2026 Charie Mae Dela Victoria. All rights reserved.</p>
