@@ -6,106 +6,103 @@
   <title>Charie Mae R. De La Victoria - Personal CV</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
+<body> 
+    <header>
+        <button id="themeToggle">Toggle Dark Mode</button>
+        <section>
+            <h1>Charie Mae R. De La Victoria</h1>
+            <p>IT Student | Web Systems and Technologies</p>
+        </section>
+    </header>
 
-<body>
-
-  <header class="main-header">
-    <h1>Charie Mae De La Victoria</h1>
-    <p>Student • Aspiring Web Developer • Badminton Player</p>
-    <p style="color: blueviolet;"
-      >IT Student | Web Systems and Technologies</p>
-  </header>
-
-<main>
+    <main>
     <div class="container">
-    <section class="card">
-    <h2>ABOUT ME</h2>
-        <p> A dedicated IT student with a strong interest in software development and networking.</p>
-      <img src="image/charie.jpg" alt="Profile Picture" 
-        width="400px" height="400px">
+        <section class="card">
+        <h2>ABOUT ME</h2>
+            <p>A dedicated IT student with a strong interest in software development and web technologies.</p>
+            <img src="image/charie.jpg" alt="Profile Picture" width="400px" height="400px">
         
-      <p>Email:
-        <a href="mailto:delavictoria.chariemae08@gmail.com">delavictoria.chariemae08@gmail.com</a><br>
-        Github
-        <a href="https://github.com/chazsaa" target="_blank">GitHub</a>
-      </p>
-    </section>
+        <p>Email:
+            <a href="mailto:delavictoria.chariemae08@gmail.com">delavictoria.chariemae08@gmail.com</a>
+        </p>
+        <p>Github:
+            <a href="https://github.com/chazsaa" target="_blank">Github</a>
+        </p>
+        </section>
 
-    <section class="card">
-    <h2>SKILLS</h2>
-    <ul>
-        <li>Web Development
-            <ul>
-                <li>TECHNICAL SKILLS
-                    <ul>
-                        <li>Programming</li>
-                        <li>Networking Basics</li>
-                        <li>Database Management</li>
-                    </ul>
-                </li>
-                <li>SOFT SKILLS
-                    <ul>
-                        <li>Problem-Solving</li>
-                        <li>Teamwork</li>
-                        <li>Communication</li>
-                    </ul>
-                </li>
-            </ul>
-        </li>
-    </ul>
-    </section>
+        <button id="toggleSkills">Show/Hide Skills</button>
+        <section class="card" id="skillsSection">
+        <h2>SKILLS</h2>
+        <ul>
+            <li>TECHNICAL SKILLS
+                <ul>
+                    <li>Programming</li>
+                    <li>Networking Basics</li>
+                    <li>Database Management</li>
+                </ul>
+            </li>
+            <li>SOFT SKILLS
+                <ul>
+                    <li>Problem-Solving</li>
+                    <li>Teamwork</li>
+                    <li>Communication</li>
+                </ul>
+            </li>
+        </ul>
+        </section>
 
-    <section class="card">
-    <h2>Education</h2>
-    <table border="1" style="width: 60%; border-collapse: collapse;">
-        <tr>
-            <th>Year</th>
-            <th>School</th> 
-            <th>Program / Level</th>
-        </tr>
-        <tr>
-            <td>2025 - Present</td>
-            <td>USTP - CDO Campus</td>
-            <td>Bachelor of Science in Information Technology</td>
-        </tr>
-        <tr>
-            <td>2022 - 2024</td>
-            <td>Holy Child High School</td>
-            <td>Senior High School - GAS</td>
-        </tr>
-        <tr>
-            <td>2018 - 2022</td>
-            <td>Holy Child High School</td>
-            <td>High School</td>
-        </tr>
-        <tr>
-            <td>2012 - 2018</td>    
-            <td>Kinoguitan Central School</td>
-            <td>Elementary School</td>
-        </tr>
-        <tr>
-            <td>2010 - 2012</td>
-            <td>Kinoguitan Kindergarten</td>
-            <td>Kindergarten</td>
-        </tr>
-    </table>
-    </section>
+        <section class="card">
+        <h2>EDUCATION</h2>
+        <table border="1" style="width: 60%; border-collapse: collapse;">
+            <tr>
+                <th>Year</th>
+                <th>School</th> 
+                <th>Program / Level</th>
+            </tr>
+            <tr>
+                <td>2025 - Present</td>
+                <td>USTP - CDO Campus</td>
+                <td>Bachelor of Science in Information Technology</td>
+            </tr>
+            <tr>
+                <td>2022 - 2024</td>
+                <td>Holy Child High School</td>
+                <td>Senior High School - GAS</td>
+            </tr>
+            <tr>
+                <td>2018 - 2022</td>
+                <td>Holy Child High School</td>
+                <td>High School</td>
+            </tr>
+            <tr>
+                <td>2012 - 2018</td>    
+                <td>Kinoguitan Central School</td>
+                <td>Elementary School</td>
+            </tr>
+            <tr>
+                <td>2010 - 2012</td>
+                <td>Kinoguitan Kindergarten</td>
+                <td>Kindergarten</td>
+            </tr>
+        </table>
+        </section>
 
-    <section class="card">
-    <h2>Contact Me</h2>
-    <form>
-        <input type="text" placeholder="Name"><br><br>
-        <input type="email" placeholder="Email"><br><br>
-        <textarea placeholder="Message"></textarea><br><br>
-        <button type="submit">Send</button>
-    </form>
-    </section>
-</div>
-</main>
+        <section class="card"> 
+            <h2>CONTACT ME</h2>
+            <form>
+                <input type="text" id="name" placeholder="Name"><br><br>
+                <input type="email" id="email" placeholder="Email"><br><br>
+                <textarea placeholder="Message"></textarea><br><br>
+                <button type="submit" id="submitBtn">Send</button>
+            </form>     
+        </section>
+    </div>
+    </main>
 
     <footer>
         <p>&copy; 2026 Charie Mae Dela Victoria. All rights reserved.</p>
     </footer>
 
+<script src="js/script.js"></script>
 </body>
 </html>

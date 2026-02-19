@@ -1,8 +1,8 @@
 /* || Global Styles || */
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  margin: 1;
+  padding: 1;
 }
 
   body {
@@ -43,7 +43,8 @@ h2 {
 
 ul {
     text-decoration: none;
-    color:blueviolet
+    color:blueviolet;
+    padding-left: 40px;
   }
 
 a {
@@ -56,77 +57,64 @@ a:hover {
 }
 
 table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 10px;
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 10px;
 }
 
 th, td {
-    border: 1px solid #ccc;
-    padding: 8px;
+	border: 1px solid #000000;
+	padding: 8px;
 }
 
 th {
-    background-color: #0077cc;
-    color: white;
+	background-color: #6b046e;
+	color: white;
 }
 
 form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+input, textarea {
+	padding: 8px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+button {
+	padding: 10px;
+	background-color : #bb0fd5;
+	color: white;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #005fa3;
 }
 
   img{
     border: 3px solid rgb(105, 70, 148)
   }
 
-   .main-header {
-    border: 3px solid rgb(111, 63, 133);
-    background-color: #f3e9ff;
-    text-align: center;
-    padding: 20px;
-    margin-bottom: 20px;
-  }
-
-    .main-header h1 {
-    color: rgb(82, 44, 118);
-    margin: 0;
-  }
-
-    .main-header p {
-    color: rgb(86, 39, 130);
-    margin-top: 8px;
-    font-size: 16px;
-  }
-
-    footer{
-    border: 3px solid rgb(111, 63, 133);
-    background-color: #f3e9ff;
-    text-align: center;
-    padding: 5px;
-    margin-top: 12px;
-  }
- 
-    footer p {
-    color: rgb(82, 44, 118);
-    margin: 0;
-  }
-
-  input,textarea{
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-   
-button {
-    padding: 10px 20px;
-    background-color: rgb(189, 17, 236);
-    color: white;
-    border: none;   
-    cursor: pointer;
+.dark-mode {
+  background-color:#161416;
+  color:white;
 }
 
-button:hover {
-    background-color: rgb(82, 44, 118);
+.dark-mode .card {
+    background-color: #333;
+    color: white;
+}
+.dark-mode input,
+.dark-mode textarea {
+    background-color: #444;
+    color: white;
+    border-color: #666;
+}
+
+.hidden {
+  display:none;
 }
