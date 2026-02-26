@@ -7,7 +7,7 @@ function Skills() {
     <section>
       <button onClick={() => setVisible(!visible)}>
         Show/Hide Skills
-      </button><br></br>
+      </button>
 
       {visible && (
         <section className="card">
