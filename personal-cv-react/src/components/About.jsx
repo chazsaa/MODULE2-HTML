@@ -9,7 +9,7 @@ function About() {
       </p>
 
       <img
-        src="/image/charie.jpg"
+        src="image/charie.jpg"
         alt="Profile"
         width="400"
         height="400"
