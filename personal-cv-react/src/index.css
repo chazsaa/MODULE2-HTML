@@ -1,0 +1,165 @@
+/* || Global Styles || */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #faf7f4;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* || Card Styling */
+.card {
+  background-color: #ffffff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #e0d4ef;
+  box-shadow: 0 4px 24px rgba(124, 45, 158, 0.08);
+}
+
+/* || Typography */
+h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+h2 {
+  margin-bottom: 10px;
+  margin-top: 20px;
+  color: #7c2d9e;
+}
+
+ul {
+  color: #7c2d9e;
+  padding-left: 40px;
+}
+
+a {
+  text-decoration: none;
+  color: #7c2d9e;
+}
+
+a:hover {
+  color: #521c7a;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  border: 1px solid #e0d4ef;
+  padding: 8px;
+}
+
+th {
+  background-color: #7c2d9e;
+  color: white;
+}
+
+tr:hover td {
+  background-color: #ede0f7;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, textarea {
+  padding: 8px;
+  border: 1px solid #e0d4ef;
+  border-radius: 4px;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #b76fd8;
+  box-shadow: 0 0 0 3px #ede0f7;
+}
+
+button {
+  padding: 10px;
+  background-color: #7c2d9e;
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+}
+
+
+button:hover {
+  background-color: #521c7a;
+}
+
+img {
+  border: 3px solid #b76fd8;
+}
+
+/* || Dark Mode */
+.dark-mode {
+  background-color: #100c18;
+  color: #f0e8ff;
+}
+
+.dark-mode .card {
+  background-color: #1c1528;
+  border-color: #2e2040;
+  color: #f0e8ff;
+}
+
+.dark-mode h2 {
+  color: #c084e8;
+}
+
+.dark-mode a,
+.dark-mode ul {
+  color: #c084e8;
+}
+
+.dark-mode th {
+  background-color: #5a1a7a;
+}
+
+.dark-mode th, 
+.dark-mode td {
+  border-color: #2e2040;
+}
+
+.dark-mode tr:hover td {
+  background-color: #2a1d3d;
+}
+
+.dark-mode input,
+.dark-mode textarea {
+  background-color: #2a1d3d;
+  color: #f0e8ff;
+  border-color: #2e2040;
+}
+
+.dark-mode button {
+  background-color: #9b59c7;
+}
+
+.dark-mode button:hover {
+  background-color: #c084e8;
+}
+
+.hidden {
+  display: none;
+}
+
