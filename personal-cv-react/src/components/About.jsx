@@ -1,8 +1,8 @@
+import Card from "./Card";
+
 function About() {
   return (
-    <section className="card">
-      <h2>ABOUT ME</h2>
-
+    <Card title="ABOUT ME">
       <p>
         A dedicated IT student with a strong interest in software
         development and web technologies.
@@ -24,15 +24,11 @@ function About() {
 
       <p>
         Github:{" "}
-        <a
-          href="https://github.com/chazsaa"
-          target="_blank"
-          rel="noreferrer"
-        >
+        <a href="https://github.com/chazsaa" target="_blank" rel="noreferrer">
           Github
         </a>
       </p>
-    </section>
+    </Card>
   );
 }
 
