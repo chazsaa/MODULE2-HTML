@@ -4,6 +4,7 @@ import About from "./components/About";
 import Skills from "./components/Skills";
 import Education from "./components/Education";
 import Contact from "./components/Contact";
+import ContactList from "./components/ContactList";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -44,17 +45,18 @@ function App() {
   ];
 
   return (
-  <div className={darkMode ? "dark-mode" : ""}>
-    <button onClick={() => setDarkMode(!darkMode)}>
-      {darkMode ? "Toggle Light Mode" : "Toggle Dark Mode"} 
-  </button>
+    <div className={darkMode ? "dark-mode" : ""}>
+      <button onClick={() => setDarkMode(!darkMode)}>
+        {darkMode ? "Toggle Light Mode" : "Toggle Dark Mode"} 
+      </button>
       <main>
         <div className="container">
           <Header />
-          <About/>
+          <About />
           <Skills skills={skills} />
           <Education education={education} />
           <Contact />
+          <ContactList />
         </div>
       </main>
 
